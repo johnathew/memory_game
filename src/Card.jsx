@@ -3,7 +3,7 @@ import imageFiles from "./assets/ImageFiles";
 const Card = (props) => {
 
     return (
-        <div key={props.index}>
+        <div>
           <img
             src={`${props.flipped}`}
             alt={props.alt}
