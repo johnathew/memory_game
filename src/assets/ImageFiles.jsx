@@ -1,7 +1,7 @@
 const imageFiles = [
   {
     id: "ace of clubs",
-    match: "A",
+    alt: "ace of clubs",
     url: "https://i.imgur.com/EqoVMIh.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -9,7 +9,7 @@ const imageFiles = [
   },
   {
     id: "ace of hearts",
-    match: "B",
+    alt: "ace of hearts",
     url: "https://i.imgur.com/szQofwg.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -17,7 +17,7 @@ const imageFiles = [
   },
   {
     id: "ace of spades",
-    match: "C",
+    alt: "ace of spades", 
     url: "https://i.imgur.com/mzcy0Xl.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -25,7 +25,7 @@ const imageFiles = [
   },
   {
     id: "king of clubs",
-    match: "D",
+    alt: "king of clubs",
     url: "https://i.imgur.com/YwHz9XC.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -33,7 +33,7 @@ const imageFiles = [
   },
   {
     id: "queen of clubs",
-    match: "E",
+    alt: "queen of clubs",
     url: "https://i.imgur.com/fyQCBEG.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -41,7 +41,7 @@ const imageFiles = [
   },
   {
     id: "queen of diamonds",
-    match: "F",
+    alt: "queen of diamonds",
     url: "https://i.imgur.com/2I2UPqI.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -49,7 +49,7 @@ const imageFiles = [
   },
   {
     id: "seven of diamonds",
-    match: "G",
+    alt: "seven of diamonds",
     url: "https://i.imgur.com/hBtEfon.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -57,14 +57,14 @@ const imageFiles = [
   },
   {
     id: "jack of diamonds",
-    match: "H",
+    alt: "jack of diamonds",
     url: "https://i.imgur.com/rNwkffE.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
   },
   {
     id: "ace of clubs 2",
-    match: "A",
+    alt: "ace of clubs",
     url: "https://i.imgur.com/EqoVMIh.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -72,7 +72,7 @@ const imageFiles = [
   },
   {
     id: "ace of hearts 2",
-    match: "B",
+    alt: "ace of hearts",
     url: "https://i.imgur.com/szQofwg.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -80,7 +80,7 @@ const imageFiles = [
   },
   {
     id: "ace of spades 2",
-    match: "C",
+    alt: "ace of spades", 
     url: "https://i.imgur.com/mzcy0Xl.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -88,7 +88,7 @@ const imageFiles = [
   },
   {
     id: "king of clubs 2",
-    match: "D",
+    alt: "king of clubs",
     url: "https://i.imgur.com/YwHz9XC.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -96,7 +96,7 @@ const imageFiles = [
   },
   {
     id: "queen of clubs 2",
-    match: "E",
+    alt: "queen of clubs",
     url: "https://i.imgur.com/fyQCBEG.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -104,7 +104,7 @@ const imageFiles = [
   },
   {
     id: "queen of diamonds 2",
-    match: "F",
+    alt: "queen of diamonds",
     url: "https://i.imgur.com/2I2UPqI.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -112,7 +112,7 @@ const imageFiles = [
   },
   {
     id: "seven of diamonds 2",
-    match: "G",
+    alt: "seven of diamonds",
     url: "https://i.imgur.com/hBtEfon.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
@@ -120,7 +120,7 @@ const imageFiles = [
   },
   {
     id: "jack of diamonds 2",
-    match: "H",
+    alt: "jack of diamonds",
     url: "https://i.imgur.com/rNwkffE.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
