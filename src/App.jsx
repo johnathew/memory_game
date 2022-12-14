@@ -4,6 +4,7 @@ import "./App.css";
 
 function App() {
   const [randomizedCards, setRandomizedCards] = useState(imageFiles);
+  const [isRevealed, setIsRevealed] = useState([]);
 
   // useEffect(()=> {
   //   const identifier = setTimeout(() => {
@@ -11,27 +12,32 @@ function App() {
   // },[randomizedCards.id, randomizedCards.flipped])
 
   const flipHandler = (id) => {
-    console.log(id.target)
-    setRandomizedCards(
-      randomizedCards.map((obj) => {
-        if (obj.id === id.target.id) {
-          return { ...obj, flipped: !obj.flipped };
-        } else {
-          return obj;
-        }
-      })
+    setRandomizedCards((prevCards) => {
+      const newCards = []
+      for (let i=0; i<prevCards.length; i++) {
+        const currentCard = prevCards[i]
+          if(currentCard.id === id.target.id) {
+            console.log(id.target.alt)
+            const updatedCards = {
+              ...currentCard,
+              flipped: !currentCard.flipped
+            }
+            newCards.push(updatedCards)
+            
+          } else {newCards.push(currentCard)}
+      }
+      return newCards
+    }
     );
-
-    
-    
   };
-
 
   const shuffleHandler = () => {
     setRandomizedCards((prevState) => {
       return [...prevState.sort(() => Math.random() - 0.5)];
     });
   };
+
+
 
   return (
     <div className="App">
@@ -58,3 +64,11 @@ function App() {
 }
 
 export default App;
+
+// randomizedCards.map((obj) => {
+//   if (obj.id === id.target.id) {
+//     return { ...obj, flipped: !obj.flipped };
+//   } else {
+//     return obj;
+//   }
+// })
