@@ -8,24 +8,25 @@ function App() {
   const [isRevealed, setIsRevealed] = useState([]);
 
   const flipHandler = (id) => {
+    const { name, flipped } = id;
+    console.log(id)
+    setRandomizedCards(
+      randomizedCards.map((card) => {
+        if (card.name === name) {
+          return { ...card, flipped: !flipped };
+        } else {
+          return card;
+        }
+      })
+    );
 
-    const { name } = id;
-
-    setRandomizedCards((prevCards) => {
-      return prevCards.map((card) => {
-        const { flipped } = card;
-        return card.name === name ? { ...card, flipped: !flipped } : card;
-      });
-    });
-
-    setIsRevealed([...isRevealed, {id}])
-    console.log(isRevealed)
-   
+    setIsRevealed([...isRevealed, id]);
+    console.log(isRevealed);
   };
 
   const shuffleHandler = () => {
-    const [...newOrder] = randomizedCards
-    setRandomizedCards(newOrder.sort(() => Math.random() - 0.5))
+    const [...newOrder] = randomizedCards;
+    setRandomizedCards(newOrder.sort(() => Math.random() - 0.5));
   };
 
   const cardElements = randomizedCards.map((card, index) => {
@@ -50,3 +51,10 @@ function App() {
 }
 
 export default App;
+
+// setRandomizedCards((prevCards) => {
+//   return prevCards.map((card) => {
+//     const { flipped } = card;
+//     return card.name === name ? { ...card, flipped: !flipped } : card;
+//   });
+// });
