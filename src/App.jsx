@@ -8,40 +8,43 @@ function App() {
   const [isRevealed, setIsRevealed] = useState([]);
 
   const flipHandler = (id) => {
+
+    const { name } = id;
+
     setRandomizedCards((prevCards) => {
       return prevCards.map((card) => {
-        return card.id === id.target.id ? {...card, flipped: !card.flipped} : card
-      })
-    }
-    );
+        const { flipped } = card;
+        return card.name === name ? { ...card, flipped: !flipped } : card;
+      });
+    });
+
+    setIsRevealed([...isRevealed, {id}])
+    console.log(isRevealed)
+   
   };
 
   const shuffleHandler = () => {
-    setRandomizedCards((prevState) => {
-      return [...prevState.sort(() => Math.random() - 0.5)];
-    });
+    const [...newOrder] = randomizedCards
+    setRandomizedCards(newOrder.sort(() => Math.random() - 0.5))
   };
 
   const cardElements = randomizedCards.map((card, index) => {
-return (
-    <Card 
-    key={index}
-    flipHandler={flipHandler}
-    alt={card.alt}
-    index={index}
-    id={card.id}
-    flipped={card.flipped ? card.url : card.back}
-    /> 
-  )})
-
-
+    return (
+      <Card
+        key={index}
+        toggle={flipHandler}
+        alt={card.alt}
+        value={randomizedCards.alt}
+        id={card}
+        flipped={card.flipped ? card.url : card.back}
+      />
+    );
+  });
 
   return (
     <div className="App">
       <button onClick={shuffleHandler}>Shuffle Cards</button>
-      <div className="grid">
-        {cardElements}
-      </div>
+      <div className="grid">{cardElements}</div>
     </div>
   );
 }

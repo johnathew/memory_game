@@ -1,5 +1,3 @@
-import imageFiles from "./assets/ImageFiles";
-
 const Card = (props) => {
 
     return (
@@ -9,8 +7,8 @@ const Card = (props) => {
             alt={props.alt}
             height="auto"
             width="80px"
-            id={props.id}
-            onClick={props.flipHandler}
+            onClick={()=> props.toggle(props.id)}
+            value={props.value}
           />
         </div>
       );
