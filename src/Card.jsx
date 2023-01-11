@@ -1,14 +1,13 @@
 const Card = (props) => {
 
     return (
-        <div>
+        <div onClick={props.toggle}>
           <img
-            src={`${props.flipped}`}
+            src={`${props.src}`}
             alt={props.alt}
             height="auto"
             width="80px"
-            onClick={()=> props.toggle(props.id)}
-            value={props.value}
+            value={props.id}
           />
         </div>
       );

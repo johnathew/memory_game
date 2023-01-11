@@ -1,3 +1,5 @@
+import { nanoid } from "nanoid";
+
 const imageFiles = [
   {
     name: "ace of clubs",
@@ -6,6 +8,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "ace of hearts",
@@ -14,6 +17,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "ace of spades",
@@ -22,6 +26,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "king of clubs",
@@ -30,6 +35,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "queen of clubs",
@@ -38,6 +44,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "queen of diamonds",
@@ -46,6 +53,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "seven of diamonds",
@@ -54,6 +62,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "jack of diamonds",
@@ -61,6 +70,8 @@ const imageFiles = [
     url: "https://i.imgur.com/rNwkffE.png",
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
+    answered: false,
+    id: nanoid()
   },
   {
     name: "ace of clubs 2",
@@ -69,6 +80,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "ace of hearts 2",
@@ -77,6 +89,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "ace of spades 2",
@@ -85,6 +98,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "king of clubs 2",
@@ -93,6 +107,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "queen of clubs 2",
@@ -101,6 +116,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "queen of diamonds 2",
@@ -117,6 +133,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
   {
     name: "jack of diamonds 2",
@@ -125,6 +142,7 @@ const imageFiles = [
     back: "https://i.imgur.com/w1y1Ngz.png", 
     flipped: false,
     answered: false,
+    id: nanoid()
   },
 ];
 
