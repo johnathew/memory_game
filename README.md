@@ -1,8 +1,6 @@
 # memory_game
 Memory game made using React
-work in progress
 
-
-dependencies:
-
-plugins: npm i vite-plugin-require
+plugins:
+vite-plugin-requre: npm i vite-plugin-require
+ReactCardFlip: npm i react-card-flip

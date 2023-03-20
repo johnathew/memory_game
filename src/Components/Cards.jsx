@@ -120,7 +120,6 @@ const Cards = () => {
     evaluate();
   }
 
-
   return (
     <>
       <button>Shuffle Cards</button>

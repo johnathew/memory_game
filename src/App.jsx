@@ -1,8 +1,5 @@
-
 import "./App.css";
 import Cards from "./Components/Cards";
-
-
 
 function App() {
   return (
@@ -15,10 +12,3 @@ function App() {
 }
 
 export default App;
-
-// setRandomizedCards((prevCards) => {
-//   return prevCards.map((card) => {
-//     const { flipped } = card;
-//     return card.name === name ? { ...card, flipped: !flipped } : card;
-//   });
-// });
