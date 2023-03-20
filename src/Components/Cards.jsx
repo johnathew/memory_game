@@ -120,9 +120,18 @@ const Cards = () => {
     evaluate();
   }
 
+  const shuffleHandler = () => {
+    setCards((prevArray) => {
+      return prevArray.sort(() => Math.random() - 0.5);
+    });
+    alert('cards shuffled! :D')
+  };
+
+  console.log(cards)
+
   return (
     <>
-      <button>Shuffle Cards</button>
+      <button onClick={shuffleHandler}>Shuffle Cards</button>
       <div className="grid">
         {cards.map((card, index) => {
           return (
