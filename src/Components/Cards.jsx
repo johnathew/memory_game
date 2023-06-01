@@ -13,7 +13,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/Ace.png"),
-      name: "aceOfClubs",
+      name: "aceOfClubsPair",
       status: "",
       id: 0,
     },
@@ -26,7 +26,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/Aceofhearts.png"),
-      name: "aceOfHearts",
+      name: "aceOfHeartsPair",
       status: "",
       id: 1,
     },
@@ -38,7 +38,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/Aceofspades.png"),
-      name: "aceOfSpades",
+      name: "aceOfSpadesPair",
       status: "",
       id: 2,
     },
@@ -50,7 +50,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/Jackofdiamonds.png"),
-      name: "jackOfDiamonds",
+      name: "jackOfDiamondsPair",
       status: "",
       id: 3,
     },
@@ -62,7 +62,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/King.png"),
-      name: "kingOfClubs",
+      name: "kingOfClubsPair",
       status: "",
       id: 4,
     },
@@ -74,7 +74,7 @@ const Cards = () => {
     },
     {
       cardFace: require("../CardImages/Kingofhearts.png"),
-      name: "kingOfHearts",
+      name: "kingOfHeartsPair",
       status: "",
       id: 5,
     },
@@ -85,11 +85,21 @@ const Cards = () => {
   );
 
   const selectHandler = (card) => {
-    firstOption ? setSecondOption(card) : setFirstOption(card);
-  };
+    console.log(card);
 
+    firstOption === null ? setFirstOption(card) : setSecondOption(card);
+  };
+  console.log(firstOption, "first");
+  console.log(secondOption, "second");
+
+  //TODO: fix bug where double clicking a single card reveals the pair
   const evaluate = () => {
-    if (firstOption.name === secondOption.name) {
+    if (
+      firstOption.name + "Pair" === secondOption.name ||
+      firstOption.name - "Pair" === secondOption.name ||
+      firstOption.name === secondOption.name + "Pair" ||
+      firstOption.name === secondOption.name - "Pair"
+    ) {
       setCards((prevCards) => {
         return prevCards.map((card) => {
           if (card.id === firstOption.id) {
@@ -121,13 +131,12 @@ const Cards = () => {
   }
 
   const shuffleHandler = () => {
-    setCards((prevArray) => {
-      return prevArray.sort(() => Math.random() - 0.5);
+    const shuffledArray = [...cards];
+    setCards(() => {
+      return shuffledArray.sort(() => Math.random() - 0.5);
     });
-    alert('cards shuffled! :D')
+    alert("cards shuffled! :D");
   };
-
-  console.log(cards)
 
   return (
     <>
