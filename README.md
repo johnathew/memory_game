@@ -9,7 +9,7 @@ I recently began sifting through the code and updating the logic so that it actu
 ## Features
 
 - Interactive memory game
-- Shuffle and reset functionality
+- Reset functionality
 - Accessible for screen readers and keyboard navigation
 
 ## Installation

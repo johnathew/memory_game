@@ -43,7 +43,7 @@ const Cards = () => {
                     <h1>Memory Game</h1>
                 </div>
                 <div className={styles.buttonDiv}>
-                    <button className={styles['button-30']} onClick={newGame}>New Game</button>
+                    <button onClick={newGame}>New Game</button>
                 </div>
                 <div className={styles.gridStyle}>
                     {cards?.map((card, index) => {

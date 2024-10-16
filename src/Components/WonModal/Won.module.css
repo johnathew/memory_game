@@ -2,7 +2,7 @@ dialog {
   z-index: 10;
   position: absolute;
   background-color: rgb(37, 58, 110);
-  max-width: 20rem;
+  max-width: 23rem;
   padding: 1rem;
   text-align: center;
   color: white;
@@ -10,6 +10,10 @@ dialog {
   line-height: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
 
 dialog::backdrop {
@@ -23,4 +27,13 @@ dialog button {
   display: block;
   margin-left: 10px;
   border-radius: 10px;
+}
+
+.extLinks {
+  display: flex;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
 }

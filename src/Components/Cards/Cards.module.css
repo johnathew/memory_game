@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 30px;
   font-weight: 300;
-  color: #bdb8b8;
+  color: #fff8f8;
   letter-spacing: 1px;
   text-transform: uppercase;
 
@@ -81,7 +81,7 @@
   touch-action: manipulation;
   white-space: nowrap;
   will-change: box-shadow, transform;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .button-30:focus {

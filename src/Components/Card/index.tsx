@@ -67,7 +67,6 @@ export const Card = ({ cardInfo, cardFace, setOptions, options, setFlippedStates
             <div
                 role="button"
                 tabIndex={0}
-                aria-label={`Card ${index + 1} front`}
                 onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
                         selectHandler(cardInfo);
@@ -82,12 +81,7 @@ export const Card = ({ cardInfo, cardFace, setOptions, options, setFlippedStates
                 />
             </div>
             {/* front component */}
-            <div
-                role="button"
-                aria-label={`Card ${index + 1} front`}
-            >
-                <img src={cardFace} alt={`Card ${index + 1} front`} className={styles.card} />
-            </div>
+            <img src={cardFace} alt={`Card ${index + 1} front`} className={styles.card} />
         </ReactCardFlip>
     );
 };
