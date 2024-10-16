@@ -1,12 +1,9 @@
-import "./App.css";
 import Cards from "./Components/Cards";
-
+import "./App.css"
 function App() {
   return (
-    <div className="App">
-      <div className="grid">
-        <Cards />
-      </div>
+    <div className="main">
+      <Cards />
     </div>
   );
 }

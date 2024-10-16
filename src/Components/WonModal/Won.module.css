@@ -1,0 +1,26 @@
+dialog {
+  z-index: 10;
+  position: absolute;
+  background-color: rgb(37, 58, 110);
+  max-width: 20rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  line-height: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem 0.25rem hsl(0 0% 0% / 10%);
+}
+
+dialog::backdrop {
+  background: rgba(229, 11, 196, 0.225);
+  height: full;
+  width: full;
+  backdrop-filter: blur(2px);
+}
+
+dialog button {
+  display: block;
+  margin-left: 10px;
+  border-radius: 10px;
+}

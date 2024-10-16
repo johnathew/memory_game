@@ -1,16 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html,
+body {
+  margin: 0;
+  background-color: rgb(51, 108, 93);
 }
 
+/* CSS */
 
-
-.grid {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 20px;
-  background-color: #595e62;
-  padding: 30px;
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  @media (max-width: 600px) {
+  }
 }
