@@ -8,7 +8,7 @@ import styles from './Card.module.css'
 export const Card = ({ cardInfo, cardFace, setOptions, options, setFlippedStates, isFlipped, index, checkAllFlipped }: CardProps) => {
     const [evaluating, setIsEvaluating] = useState(false)
 
-    const selectHandler = (card: CardTypes) => {
+    const selectHandler = (card: CardTypes, index: number) => {
         if (!evaluating) {
             setFlippedStates((prev) => {
                 const newFlippedStates = [...prev]
@@ -69,10 +69,10 @@ export const Card = ({ cardInfo, cardFace, setOptions, options, setFlippedStates
                 tabIndex={0}
                 onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
-                        selectHandler(cardInfo);
+                        selectHandler(cardInfo, index);
                     }
                 }}
-                onClick={() => selectHandler(cardInfo)}
+                onClick={() => selectHandler(cardInfo, index)}
             >
                 <img
                     src={Cardback}

@@ -1,10 +1,10 @@
 # Memory Game
 
-Memory game made using React
-
-One of the first projects I made while learning React several years ago.
+One of the first projects I made while learning React.
 
 I recently began sifting through the code and updating the logic so that it actually worked.
+
+Won't be featured on the New York Times games section, just made to demonstrate my somewhat decent knowledge of TS and React.
 
 ## Features
 
