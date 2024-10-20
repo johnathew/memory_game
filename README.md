@@ -1,6 +1,6 @@
 # Memory Game
 
-One of the first projects I made while learning React.
+One of the first projects I made while learning React awhile back.
 
 I recently began sifting through the code and updating the logic so that it actually worked.
 

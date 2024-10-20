@@ -72,6 +72,7 @@ export const Card = ({ cardInfo, cardFace, setOptions, options, setFlippedStates
                         selectHandler(cardInfo, index);
                     }
                 }}
+                className={styles.cardDiv}
                 onClick={() => selectHandler(cardInfo, index)}
             >
                 <img

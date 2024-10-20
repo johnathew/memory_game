@@ -4,11 +4,6 @@ export interface CardTypes {
   id: number;
 }
 
-// export interface OptionTypes {
-//   firstOption?: CardTypes;
-//   secondOption?: CardTypes;
-// }
-
 export type CardProps = {
   cardInfo: CardTypes;
   cardFace: string;
